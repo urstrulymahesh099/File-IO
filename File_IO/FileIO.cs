@@ -49,5 +49,15 @@ namespace File_IO
                 }
             }
         }
+        public static void WritUsingStreamWriter()
+        {
+            string path = @"E:\Bridgelabz\File-IO\File_IO\TextFile1.txt";
+            using (StreamWriter sr = File.AppendText(path))
+            {
+                sr.WriteLine("Both Are Friends");
+                sr.Close();
+                Console.WriteLine(File.ReadAllText(path));
+            }
+        }
     }
 }
