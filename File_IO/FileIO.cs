@@ -24,6 +24,13 @@ namespace File_IO
             Console.WriteLine(lines[0]);
             Console.WriteLine(lines[1]);
         }
-        
+        public static void FileCopy()
+        {
+            string path = @"E:\Bridgelabz\File-IO\File_IO\TextFile1.txt";
+            string copypath = @"E:\Bridgelabz\File-IO\File_IO\TextFileNew2.txt";
+            File.Copy(path, copypath);
+            Console.WriteLine("********Successfully copied***********");
+        }
+
     }
 }
