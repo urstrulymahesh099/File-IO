@@ -31,6 +31,12 @@ namespace File_IO
             File.Copy(path, copypath);
             Console.WriteLine("********Successfully copied***********");
         }
+        public static void DeleteFile()
+        {
+            string copypath = @"E:\Bridgelabz\File-IO\File_IO\TextFileNew2.txt";
+            File.Delete(copypath);
+            Console.WriteLine("********Successfully Deleted***********");
+        }
 
     }
 }
