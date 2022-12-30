@@ -37,6 +37,17 @@ namespace File_IO
             File.Delete(copypath);
             Console.WriteLine("********Successfully Deleted***********");
         }
-
+        public static void ReadFromStreamReader()
+        {
+            string path = @"E:\Bridgelabz\File-IO\File_IO\TextFile1.txt";
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while ((s=sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+        }
     }
 }

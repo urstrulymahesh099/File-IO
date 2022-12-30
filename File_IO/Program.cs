@@ -13,7 +13,7 @@ namespace File_IO
             Console.WriteLine("Welcome to File_IO problem");
             while(true)
             {
-                Console.WriteLine("---------------------------------------------\nPlease Select Below Given Options\n1.FileExists\n2.ReadAlllines\n3.CopyMethod\n4.DeleteFile");
+                Console.WriteLine("---------------------------------------------\nPlease Select Below Given Options\n1.FileExists\n2.ReadAlllines\n3.CopyMethod\n4.DeleteFile\n5.ReadFromStreamReader");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -28,6 +28,9 @@ namespace File_IO
                         break;
                     case 4:
                         FileIO.DeleteFile();
+                        break;
+                    case 5:
+                        FileIO.ReadFromStreamReader();
                         break;
                 }
             }
